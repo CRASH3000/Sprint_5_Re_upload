@@ -107,7 +107,7 @@ class Locators:
         By.XPATH,
         "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Соусы')]",
     )
-    FILLINGS_TAB = (
+    TOPPINGS_TAB = (
         By.XPATH,
         "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Начинки')]",
     )
@@ -115,6 +115,12 @@ class Locators:
         By.XPATH,
         "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Булки')]",
     )
+
+    # Локаторы для активных вкладок
+    ACTIVE_SAUCE_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc') and contains(., 'Соусы')]")
+    ACTIVE_TOPPINGS_TAB = (
+    By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc') and contains(., 'Начинки')]")
+    ACTIVE_BUNS_TAB = (By.XPATH, "//div[contains(@class, 'tab_tab_type_current__2BEPc') and contains(., 'Булки')]")
 
     # Локаторы для ингредиентов
     SPICY_X_SAUCE = (By.XPATH, "//p[contains(., 'Соус Spicy-X')]")
